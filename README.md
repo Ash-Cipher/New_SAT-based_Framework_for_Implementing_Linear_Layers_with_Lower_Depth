@@ -37,29 +37,29 @@ Example:
     2000 50000 64 0 12345 < AES.txt
 
 Parameters
-greedy_rounds	Number of greedy searches on the original target matrix.
+greedy_rounds:	Number of greedy searches on the original target matrix.
 
-sat_rounds	Number of SAT refinement rounds for each selected candidate.
+sat_rounds:	Number of SAT refinement rounds for each selected candidate.
 
-min_window	Minimum window length for SAT local refinement.
+min_window:	Minimum window length for SAT local refinement.
 
-max_window	Maximum window length for SAT local refinement.
+max_window:	Maximum window length for SAT local refinement.
 
-extra_gate_allow	Extra CNOT gates allowed in SAT refinement when trying to reduce depth.
+extra_gate_allow:	Extra CNOT gates allowed in SAT refinement when trying to reduce depth.
 
-pool_per_depth	Maximum number of candidates kept for each depth.
+pool_per_depth:	Maximum number of candidates kept for each depth.
 
-conflict_limit	CaDiCaL conflict limit for each SAT call.
+conflict_limit:	CaDiCaL conflict limit for each SAT call.
 
-output_file	File used to save the best circuit found.
+output_file:	File used to save the best circuit found.
 
-perm_rounds	Number of greedy searches on permuted equivalent targets.
+perm_rounds:	Number of greedy searches on permuted equivalent targets.
 
-block_rounds	Number of AES block-cyclic prefix seed searches. Mainly useful for 32-bit AES MixColumn-like matrices.
+block_rounds:	Number of AES block-cyclic prefix seed searches. Mainly useful for 32-bit AES MixColumn-like matrices.
 
-random_perm_count	Number of random permutations added to the structure-aware permutation set.
+random_perm_count:	Number of random permutations added to the structure-aware permutation set.
 
-refine_depth_slack	SAT refinement is applied to candidates with depth at most best_depth + refine_depth_slack.
+refine_depth_slack:	SAT refinement is applied to candidates with depth at most best_depth + refine_depth_slack.
 
-rng_seed	Optional fixed random seed for reproducible experiments.
+rng_seed:	Optional fixed random seed for reproducible experiments.
 
